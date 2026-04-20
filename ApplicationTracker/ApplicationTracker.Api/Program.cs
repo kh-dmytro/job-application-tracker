@@ -6,6 +6,7 @@ namespace ApplicationTracker.Api
     {
         public static void Main(string[] args)
         {
+            AppContext.SetSwitch("System.Net.DisableIPv6", true);
             CreateHostBuilder(args).Build().Run();
         }
 
