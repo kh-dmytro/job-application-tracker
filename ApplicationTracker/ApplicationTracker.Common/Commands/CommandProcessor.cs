@@ -1,6 +1,7 @@
+using CafeteriaApp.Common.Commands;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace CafeteriaApp.Common.Commands;
+namespace ApplicationTracker.Common.Commands;
 
 public class CommandProcessor : ICommandProcessor
 {

@@ -1,8 +1,11 @@
 ﻿using System.Reflection;
 using ApplicationTracker.Api.Configuration;
+using ApplicationTracker.Api.Services;
+using ApplicationTracker.Common.Commands;
 using ApplicationTracker.Common.Data;
 using CafeteriaApp.Common.Commands;
 using CafeteriaApp.Common.Queries;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -66,6 +69,7 @@ namespace ApplicationTracker.Api
             AddAppConfiguration(services, Configuration);
             ConfigureDependencyInjection(services);
             services.AddHttpContextAccessor();
+            
         }
 
 
@@ -93,6 +97,12 @@ namespace ApplicationTracker.Api
             services.AddScoped<IQueryProcessor, QueryProcessor>();
 
             services.AddScoped<AppDbContext>();
+            services.AddScoped<JwtTokenService>();
+            services.AddScoped<ApplicationService>();
+            services.AddScoped<LinkedinService>();
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer();
+            services.AddScoped<XingService>();
             // services.AddScoped<IClaimsTransformation, UserRoleClaimsTransformer>();
         }
 
