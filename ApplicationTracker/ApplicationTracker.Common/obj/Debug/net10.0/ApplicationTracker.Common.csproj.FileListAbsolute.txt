@@ -1,0 +1,16 @@
+C:\dev\webEnt\job-application-tracker\ApplicationTracker\ApplicationTracker.Common\bin\Debug\net10.0\ApplicationTracker.Common.deps.json
+C:\dev\webEnt\job-application-tracker\ApplicationTracker\ApplicationTracker.Common\bin\Debug\net10.0\ApplicationTracker.Common.runtimeconfig.json
+C:\dev\webEnt\job-application-tracker\ApplicationTracker\ApplicationTracker.Common\bin\Debug\net10.0\ApplicationTracker.Common.dll
+C:\dev\webEnt\job-application-tracker\ApplicationTracker\ApplicationTracker.Common\bin\Debug\net10.0\ApplicationTracker.Common.pdb
+C:\dev\webEnt\job-application-tracker\ApplicationTracker\ApplicationTracker.Common\obj\Debug\net10.0\ApplicationTracker.Common.csproj.AssemblyReference.cache
+C:\dev\webEnt\job-application-tracker\ApplicationTracker\ApplicationTracker.Common\obj\Debug\net10.0\ApplicationTracker.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\webEnt\job-application-tracker\ApplicationTracker\ApplicationTracker.Common\obj\Debug\net10.0\ApplicationTracker.Common.AssemblyInfoInputs.cache
+C:\dev\webEnt\job-application-tracker\ApplicationTracker\ApplicationTracker.Common\obj\Debug\net10.0\ApplicationTracker.Common.AssemblyInfo.cs
+C:\dev\webEnt\job-application-tracker\ApplicationTracker\ApplicationTracker.Common\obj\Debug\net10.0\ApplicationTracker.Common.csproj.CoreCompileInputs.cache
+C:\dev\webEnt\job-application-tracker\ApplicationTracker\ApplicationTracker.Common\obj\Debug\net10.0\EFCoreSqlServerNetTopologySuite.cs
+C:\dev\webEnt\job-application-tracker\ApplicationTracker\ApplicationTracker.Common\obj\Debug\net10.0\ApplicationTracker.Common.sourcelink.json
+C:\dev\webEnt\job-application-tracker\ApplicationTracker\ApplicationTracker.Common\obj\Debug\net10.0\ApplicationTracker.Common.dll
+C:\dev\webEnt\job-application-tracker\ApplicationTracker\ApplicationTracker.Common\obj\Debug\net10.0\refint\ApplicationTracker.Common.dll
+C:\dev\webEnt\job-application-tracker\ApplicationTracker\ApplicationTracker.Common\obj\Debug\net10.0\ApplicationTracker.Common.pdb
+C:\dev\webEnt\job-application-tracker\ApplicationTracker\ApplicationTracker.Common\obj\Debug\net10.0\ApplicationTracker.Common.genruntimeconfig.cache
+C:\dev\webEnt\job-application-tracker\ApplicationTracker\ApplicationTracker.Common\obj\Debug\net10.0\ref\ApplicationTracker.Common.dll

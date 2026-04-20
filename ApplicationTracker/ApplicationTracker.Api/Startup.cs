@@ -1,7 +1,9 @@
 ﻿using System.Reflection;
+using ApplicationTracker.Api.Configuration;
 using ApplicationTracker.Common.Data;
 using CafeteriaApp.Common.Commands;
 using CafeteriaApp.Common.Queries;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace ApplicationTracker.Api
@@ -45,44 +47,12 @@ namespace ApplicationTracker.Api
             }
             else
             {
-                /*services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                    .AddJwtBearer(options =>
-                    {
-                        options.Authority = "https://login.microsoftonline.com/common/v2.0";
-                        options.TokenValidationParameters = new()
-                        {
-                            ValidateAudience = true,
-                            ValidateIssuer   = true,
-                            // ValidIssuers     = new[]
-                            // {
-                            //     // PV/AWK Tenant
-                            //     "https://login.microsoftonline.com/580b7714-e0ba-4b1b-a1f9-315db4623b1f/v2.0",
-                            //     // Tenant ID AWK (all users from awk)
-                            //     "https://login.microsoftonline.com/15535e10-9847-45dd-942e-244fc1f74522/v2.0",
-                            // },
-                            ValidIssuers = new[]
-                            {
-                                // v1 Format
-                                "https://sts.windows.net/580b7714-e0ba-4b1b-a1f9-315db4623b1f/",
-                                "https://sts.windows.net/15535e10-9847-45dd-942e-244fc1f74522/",
-                                // v2 Format
-                                "https://login.microsoftonline.com/580b7714-e0ba-4b1b-a1f9-315db4623b1f/v2.0",
-                                "https://login.microsoftonline.com/15535e10-9847-45dd-942e-244fc1f74522/v2.0",
-                            },
-                            ValidAudiences = new[]
-                            {
-                                "6a2d3ad7-7b97-46cb-ab8f-f15fad91ad7a",// cafeteria-app
-                                "faafe262-2c80-41c9-8388-1b1c41368b8a",  // cafeteria-api
-                                "api://faafe262-2c80-41c9-8388-1b1c41368b8a"
-                            }
-                        };
-                    });*/
+                
             }
 
             services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("AppDbContext"),
+                options.UseNpgsql(Configuration.GetConnectionString("AppDbContext"),
                     b => {
-                        b.UseNetTopologySuite();
                         b.CommandTimeout(120);
                     }));
 
@@ -96,7 +66,6 @@ namespace ApplicationTracker.Api
             AddAppConfiguration(services, Configuration);
             ConfigureDependencyInjection(services);
             services.AddHttpContextAccessor();
-            // services.AddAutoMapper(cfg => cfg.AddProfile<MappingProfile>());
         }
 
 
